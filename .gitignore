@@ -28,3 +28,4 @@ replay_pid*
 .settings/*
 target/
 target/classes/META-INF/MANIFEST.MF
+sales/
