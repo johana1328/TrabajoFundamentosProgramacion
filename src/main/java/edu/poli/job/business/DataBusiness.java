@@ -17,7 +17,7 @@ public class DataBusiness {
 	private StoreData<SellerDto> seller;
 	private StoreData<ProductDto> product;
 	private StoreData<SaleDto> sale;
-
+ 
 	public DataBusiness() {
 		this.seller = new SellerData();
 		this.product = new ProductData();
