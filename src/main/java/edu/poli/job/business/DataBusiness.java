@@ -24,14 +24,19 @@ public class DataBusiness {
 	}
 
 	public void buildData() throws CustomException {
+		System.out.println("Inicio generacion de informacion del sistema");
 		List<SellerDto> sellers = this.seller.buildFile();
+		System.out.println("Generado archivo de vendedores ... OK");
 		List<ProductDto> products = this.product.buildFile();
+		System.out.println("Generado archivo de productos ... OK");
 		for (SellerDto seller : sellers) {
 			List<ProductDto> productsSold = getProductsSold(products);
 			String fileName = new StringBuilder("V").append(seller.getIdNumber()).append(".txt").toString();
 			sale = new SalesData(seller, productsSold, fileName);
 			sale.buildFile();
 		}
+		System.out.println("Generados archivos de ventas ... OK");
+		System.out.println("Ha finalizado la generación de archivos ... OK");
 	}
 
 	private List<ProductDto> getProductsSold(List<ProductDto> products) {
@@ -41,7 +46,6 @@ public class DataBusiness {
 			maxSales = products.size();
 		}
 		int[] poductList = JobUtil.getRandomList(maxSales, products.size() - 1);
-		System.out.println(poductList.length);
 		for (int i = 0; i < poductList.length; i++) {
 			productsResponse.add(products.get(poductList[i]));
 		}
