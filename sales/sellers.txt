@@ -1,0 +1,11 @@
+CE;92154001;Vendedor0;Apellido0
+CC;92154001;Vendedor1;Apellido1
+CE;92154001;Vendedor2;Apellido2
+CC;92154001;Vendedor3;Apellido3
+CE;92154001;Vendedor4;Apellido4
+CC;92154001;Vendedor5;Apellido5
+CE;92154001;Vendedor6;Apellido6
+CC;92154001;Vendedor7;Apellido7
+NIT;92154001;Vendedor8;Apellido8
+NIT;92154001;Vendedor9;Apellido9
+CC;92154001;Vendedor10;Apellido10
